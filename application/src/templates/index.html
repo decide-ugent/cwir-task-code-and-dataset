@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+
+    <link rel="icon" type="image/x-icon" href="static/images/logo_ChronoPilot.png">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='texts.js') }}"></script> 
+    <script src="{{ url_for('static', filename='how_to_conduct_experiment.js') }}"></script> 
+    <script src="{{ url_for('static', filename='reset_global_variables.js') }}"></script>
+    <script src="{{ url_for('static', filename='reproduction_task.js') }}"></script>
+    <script src="{{ url_for('static', filename='only_one_choice_message.js') }}"></script>
+    <script src="{{ url_for('static', filename='take_break_message.js') }}"></script>
+    <script src="{{ url_for('static', filename='questionnaire_class_1.js') }}"></script>
+    <script src="{{ url_for('static', filename='introduction.js') }}"></script> 
+    <script src="{{ url_for('static', filename='instructions.js') }}"></script> 
+    <script src="{{ url_for('static', filename='helper_functions.js') }}"></script>
+    <script src="{{ url_for('static', filename='block_end_questionnaire.js') }}"></script>
+    <script src="{{ url_for('static', filename='attention_check.js') }}"></script> 
+    <script src="{{ url_for('static', filename='cursor.js') }}"></script> 
+    <script src="{{ url_for('static', filename='time_estimation_instructions.js') }}"></script> 
+    <script src="{{ url_for('static', filename='experiment_rounds.js') }}"></script>
+    <script src="{{ url_for('static', filename='dont_count_message.js') }}"></script> 
+    <script src="{{ url_for('static', filename='final_questionnaire.js') }}"></script>
+    <script src="{{ url_for('static', filename='load_gambles.js') }}"></script>
+    <script src="{{ url_for('static', filename='performance_bonus.js') }}"></script>
+    <script src="{{ url_for('static', filename='practice_rounds.js') }}"></script>
+    <script src="{{ url_for('static', filename='save_data.js') }}"></script>
+    <script src="{{ url_for('static', filename='quiz.js') }}"></script>
+    <script src="{{ url_for('static', filename='global_variables.js') }}"></script>
+    <script src="{{ url_for('static', filename='check_full_screen.js') }}"></script>
+    <script src="{{ url_for('static', filename='consent_form.js') }}"></script>
+    <script src="{{ url_for('static', filename='time_limit_warning.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+    
+   
+    <div id="mainContainer" 
+        class="main-container">
+    </div>
+
+    <div id="bigContainer" 
+        class="big-container"
+        style="display: none;">
+    </div>
+
+    
+    <div id="dotContainer" 
+        class="dot-container"
+        style="display: none;">
+    </div>
+
+    <div id="fullscreenMessage" 
+        class="full-screen-message" 
+        style="display: none;">
+    </div>
+
+    <div id="switchWindowMessage"
+        class="switch-window-message" 
+        style="display: none;">
+    </div>
+
+    <div id="fixation-cross-template" style="display: none;">
+        <div class="cross-line horizontal-cross-line"></div>
+        <div class="cross-line vertical-cross-line"></div>
+    </div>
+
+    <div id="fixation-triangle-template" style="display:none;">
+        <svg width="100" height="87" viewBox="0 0 60 52" aria-hidden="true">
+            <polygon points="30,4 4,48 56,48" />
+        </svg>
+    </div>
+
+    <div id="timeLimitWarningMessage" 
+        class="time-limit-warning-message" 
+        style="display: none;">
+    </div>
+
+    <div id="timeLimitQuestionnaireWarningMessage" 
+        class="time-limit-warning-questionnaire-message" 
+        style="display: none;">
+    </div>
+
+    <div id="restTimeLimitWarningMessage" 
+        class="time-limit-warning-questionnaire-message" 
+        style="display: none;">
+    </div>
+
+    <div id="missedDeadlineWarningMessage" 
+        class="missed-deadline-warning-message" 
+        style="display: none;">
+    </div>
+
+    <div id="Incorrect" 
+        class= "Incorrect">
+    </div>
+
+    <div id="Icon" 
+        class = "centered-icon">
+    </div>
+
+    <div id="correct" 
+        class= "correct">
+    </div>
+    
+    <div id="takeBreak" 
+        class= "take-break">
+    </div>
+
+    <div id="bonusFeedback" 
+        class= "bonus-feedback">
+    </div>
+    
+    <div id="Countdown" 
+        class= "countdown">
+    </div>
+    
+    <div id="Countdown-centre" 
+        class= "countdown-centred">
+    </div>
+    
+    <div id="PracticeExplanation" 
+        class= "explanation" 
+        style="display: none;" >
+    </div>
+    
+    <!--<div id="fixation-cross" style="display: none;">
+        <div class="cross-line horizontal-cross-line"></div>
+        <div class="cross-line vertical-cross-line"></div>
+    </div>-->
+
+    <div id="CountdownText" style="display: none;">
+        <h2 class= "countdownText">The experiment will start in</h2>
+    </div>
+
+    <div id="slotMachine" class = "golden-rectangle" style="display: none;">
+        <div class="reel-container-up">
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+        </div>
+        <div class="reel-container-down">
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+        </div>
+        <button id="spinButton" class = "spin-button">SPIN</button>
+    </div>
+
+    <div id="practiceSlotMachine" 
+        class = "golden-rectangle" 
+        style="display: none;">
+            <div class="reel-container">
+                <div class="practice-reel"></div>
+                <div class="practice-reel"></div>
+            </div>
+            <button id="practiceSpinButton" class = "spin-button">SPIN</button>
+    </div>
+
+    <div id="mistake" 
+        class= "mistake">
+    </div>
+
+    <div id="areyousure" 
+        class="areyousure" 
+        style="display: none;">
+    </div>
+    
+    <div id="welcome" 
+        class="welcome" 
+        style="display: none;">
+    </div>    
+    
+    <div id="question1error"></div>
+    <div id="question2error"></div>
+    <div id="question3error"></div>
+    <div id="question4error"></div>
+    
+    <div id="progressBar" class="progress-bar"></div>
+
+    <div id= "ButtonsExplanation" 
+        class= "ButtonsExplanation" 
+        style="display: none;">
+            <button class = "button" 
+            onclick="PracticeQuestion(0,0)">Start practicing</button>
+    </div>
+
+    <div id="questionnaire" 
+        class="questionnaire" 
+        style="display: none;">
+    </div>
+    
+    <div id="finalQuestionnaire" 
+        class="finalQuestionnaire" 
+        style="display: none;">
+    </div>
+    
+    <div id="blockEndQuestionnaire" 
+        class="finalQuestionnaire" 
+        style="display: none;">
+    </div>
+    
+    <div id="attentionCheck" 
+        class="attention-check" 
+        style="display: none;">
+    </div>
+    
+    <div id= "show-outcome" 
+        class= "show-outcome">
+    </div>
+
+    <div id= "instructionsBoxText" 
+        class= "explanationBoxText" 
+        style="display: none;">
+    </div>
+    
+    <div id= "thankYouMessage" 
+        class="thank-you-message" 
+        style="display: none;">
+    </div>
+    
+    <div id= "InstructionsCompleted" 
+        class="instructions-completed" 
+        style="display: none;">
+    </div>
+    
+    <div id= "instructionsMessageBoxText" 
+        class= "instructionsMessageBoxText" 
+        style="display: none;">
+    </div>
+    
+    <div id= "instructionsMessage" 
+        class= "instructionsMessage" 
+        style="display: none;">
+    </div>
+    
+    <div id= "consentFormBoxText" 
+        class= "consentBoxText">
+    </div>
+    
+    <div id= "consentForm" 
+        class= "consentForm">
+    </div>
+    
+    <div id= "instructions" 
+        class= "instructions">
+    </div>
+
+    <div id= "explanations" 
+        class= "explanations">
+    </div>
+
+    <div id= "timingInstructions" 
+        class= "timing-instructions">
+    </div>
+
+    <div id= "startQuiz" 
+        class= "startQuiz">
+    </div>
+
+    <div id= "Quiz" 
+        class= "quiz">
+    </div>
+    
+    <div id= "quizMistake" 
+        class= "instructions">
+    </div>
+
+    <div id= "startPracticing" 
+        class= "explanations">
+    </div>
+
+    <div id= "startExperiment" 
+        class= "instructions-completed">
+    </div>
+
+    <div id="thankYouMessage" 
+        class="thankYouMessage" 
+        style="display: none;">
+            <h2>Thanks for participating!</h2>
+    </div>  
+    
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

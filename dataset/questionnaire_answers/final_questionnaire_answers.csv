@@ -1,0 +1,61 @@
+ParticipantID,CountingFrequency,ResponseTimeCountingFrequency,FocusLoss,InstructionsComprehension,Feedback,FirstAttentionCheckRoundNumber,SecondAttentionCheckRoundNumber,FirstAttentionCheckAnswer,SecondAttentionCheckAnswer,TotalObjectiveStudyTime,TotalEarned
+0,2,4.2635,I have tried to be focused on the task during the entire experiment,3,,40,49,3,4,2801.0927,120
+1,1,4.044099999904633,no,3,,25,56,3,4,2452.807,261
+2,2,16.3835,No I don't think I  lost focus.,3,,37,53,3,4,2667.804300000012,327
+3,1,4.169400000095368,A couple of times I lost concentration and hit space before the triangle disappeared.,2,,25,48,3,4,2114.9692999997137,277
+4,1,4.758600000023842,I didnt lose focus during the experiment ,1,,38,52,3,4,2415.213200000048,109
+5,2,2.75479999999702,"Sometimes I felt zoned out, due to repetitiveness of the study",2,,27,49,3,4,2102.4245,55
+6,1,2.6995,No,1,,37,49,3,4,2721.6854000000003,350
+7,3,38.00860000002384,not at all,1,,30,49,3,4,2121.087700000048,116
+8,1,6.797,"No, I did not",1,"I really enjoyed taking part in this study, please invite me to more in the future.",27,47,3,4,2425.0227999999524,349
+9,2,5.318700000047683,"No, I did not lose focus at any point and was able to concentrate throughout without distractions",1,It is very tricky to try and not count up in my head the time taken but I did my best to try and avoid doing this!,39,58,3,4,2247.0695999999048,235
+10,1,10.9675,"no, did not",4,,29,57,3,4,2549.856400000006,212
+11,2,,Yes the last one noticed a couple where I was waiting for the next round and hadnt clicked on the estimation,1,"Felt very difficult to get a decent bonus tbh. Hope there was a 25pc chance on all of them but didnt feel like it tbh. Also would have been good if there were different tasks for the three rounds, but other than that all good. Thanks",36,54,3,4,2501.847299999997,243
+12,2,5.220199999999255,No,1,,30,51,3,4,3131.420299999999,253
+13,1,10.970900000095368,i did not loose focus,1,,39,57,3,4,3331.2470999999045,203
+14,1,4.3703000000007455,No i did not lose focus ,1,,39,51,3,4,2814.1867,164
+15,1,5.0205,I remained focussed,2,Interesting and engaging study. Thank you.,24,43,3,4,3181.4125,203
+16,1,8.182900000035763,No,1,,30,55,3,4,2839.866199999988,121
+17,1,3.8591999999997206,"No, I stared at the boring study",1,"Very simple game, incredibly slow and boring. Very low chance of a decent payout, probably fixed anyway. I chose quickly by disregarding low payment amounts and low odds, as neither of these are likely to give me much if any. No need to ponder, there was a ""right"" one for each round.",22,55,3,4,2402.5467,293
+18,4,6.664199999988079,I had a good rhythm going with the counting etc but i lost it suddenly a couple of times and this is when it went all wrong!,2,Just thank you for the opportunity to participate in this enjoyable research.,39,45,3,4,2567.068300000012,248
+19,4,32.12679999995232,Not really other than not counting in my head when the triangle first appeared before selecting so did a rough calculation to add to what I counted in my head,2,,32,53,3,4,2661.001100000143,201
+20,1,4.89480000000447,No - was focussed all the time.,2,Interesting - thanks! ,25,57,3,4,2492.9753999999984,277
+21,2,5.33469999999553,"Yes mind wandered, knew I shouldn't count too but hard not to in head.  Block 2 felt longest",2,,31,47,3,4,4386.480899999999,220
+22,1,2.755100000023842,The dog barked a little during the middle of round three,2,,38,46,3,4,2164.091199999988,213
+23,1,3.5889000000059603,Around the middle of block 2. I spaced out and forgot to press the space bar.,1,,34,51,3,4,2644.659900000006,328
+24,2,6.31509999999404,"Not really. I stayed steady throughout. Except One moment, when I blanked out and forgot to press Space",2,,31,53,3,4,2000.7267999999824,161
+25,1,3.6271000001430513,I did not lose focus,1,,29,42,3,4,2181.8824000000955,401
+26,1,3.7025,"No, I didnt lose focus although this was hard as this was an insanely boring task/game",1,,25,54,3,4,2340.3055,337
+27,4,11.855599999999628,"No i actually found it pretty easy to concentrate, the breaks were perfect in breaking it up, there was no issues",1,,33,47,3,4,2225.5066000000006,362
+28,1,3.1636999999880797,"No, I took a couple of short 30 second breaks to just reset my mind and go through my strategy for the choices",1,I got $433 but it said this only corresponds to a £1 bonus. But this does not match with the detail and instruction at the start? I believe this should be a £3 bonus if I remember correctly...,38,47,3,4,3019.2100999999643,433
+29,1,3.909900000095368,no i didnt ,2,,35,44,3,4,2066.3233000001906,167
+30,4,4.018,"I once lost focus when counting the triangle, only for a second, my head just zoned out so I may have scored a little poorly on that time estimation.",1,Really enjoyed this study.  I have quite poor time perception so I was determined to try and do well by counting in my head.,22,55,3,4,2438.943,458
+31,1,5.1645,"yes . I lost focus in the last round and realised that i had phased out for a few of the lotteries, even though i still read them to choose, but seemed to be doing that almost automatically",2,,33,47,3,4,2889.552400000036,307
+32,1,11.19780000001192,,2,,40,46,3,4,2273.786299999982,394
+33,2,4.354200000047684,no,3,,37,52,3,4,2340.4765,27
+34,1,15.435799999713897,The rounds that went longer ,1,- ,25,52,3,4,2295.5955,274
+35,1,6.967400000095368,No,2,,36,48,3,4,2309.275900000096,387
+36,3,8.97920000000298,no,2,,40,60,3,4,8241.046799999998,420
+37,1,5.067799999997019,No,2,,29,49,3,4,2997.167099999994,308
+38,1,3.131,"No, I stayed very focus during the lottery rounds",2,,24,55,3,4,2175.1295,330
+39,4,6.435700000000186,no i was counting every time out loud,1,,36,59,3,4,2208.0641,270
+40,4,4.3935,"No, I didn't lose focus during the experiment.",2,,27,55,3,4,2299.703699999999,348
+41,1,3.226300000000745,Not once.,1,,38,60,3,4,2032.9673000000005,222
+42,1,3.552,no i didnt,1,,37,51,3,4,2449.116100000024,158
+43,1,4.058,,2,"I expected there to be more variation between the lengths of time the triangle was present, found the range quite small and didn't want to focus on this aspect of the task at the expense of picking the better lottery.",40,56,3,4,3067.978899999976,341
+44,4,8.14730000001192,"When I went back to the second block after the break, I was trying to get back to focus.",3,The instructions needed time to understand but it was easy once I played the practice and started the first block.,35,54,3,4,3167.818400000036,426
+45,1,2.8770999999046327,"I didn't lose focus at all, I was constantly engaged",1,I found the game quite engaging and interesting,22,52,3,4,2327.308600000143,262
+46,1,3.281,"No, strangley, I was able to pay attention throughout without having my mind wander. Perhaps it was because the study had a few steps to complete. I made a Herculean effort not to count! It wasn't difficult after the first try.",1,Your instructions were very clear! I enjoyed this study and thank you for the opportunity. Good luck with your research.,34,57,3,4,2560.660800000012,364
+47,1,4.914900000035763,I kept focused on each round. ,3,,31,57,3,4,3053.3027000000475,167
+48,1,3.9791000000089407,no,1,,36,52,3,4,3268.675099999994,341
+49,1,9.42009999999404,"I did not but I do feel in the trials where it took me longer to decide which lottery, I was less able to calculate the time of the triangle",1,,36,43,3,4,2176.260800000012,271
+50,1,7.1494000005722045,no,2,,39,53,3,4,2518.302199999809,317
+51,2,7.0415,"During the last block, the periods with the triangle on the screen did feel like they were on forever, but I really did put effort into bringing myself back, it did make me yawn a few times. ",1,"I just wanted to add that although you didn't want us counting in our heads, I did find that my head was automatically doing it at some points and I had to keep stopping myself - hope this doesn't impact your findings!",23,57,3,4,2619.155300000072,272
+52,1,5.4485,No I remained focus throughout,2,,29,42,3,4,2332.108599999964,212
+53,2,5.35210000000149,"I didnt loose focus, but I found the third round the hardest because it became so repetitive",3,"Everything was fine, thank you!",38,60,3,4,2569.6208000000006,227
+54,4,4.0292999999523165,"No, I managed to maintain my focus throughout.",1,"It was an enjoyable study. I had no issues following along with the instructions and playing the game. It wasn't boring, I kept my concentration throughout and enjoyed myself. Thank you.",37,46,3,4,6514.855700000047,184
+55,1,8.365600000023841,after the second block. i felt it was less time to choose,3,,33,43,3,4,2513.5227000000177,185
+56,1,6.678699999999255,Second round I lost for a flash of a moment when a ladybird flew in my face out of nowhere. I have a few of them flying around the bedroom window.,3,Thank you. It was interesting. ,37,48,3,4,2873.083700000001,299
+57,1,14.005799999952316,no,1,,30,60,3,4,2661.9711999998094,214
+58,1,10.936599999964235,No,1,Thank you :),24,60,3,4,2588.037399999976,187
+59,4,6.8027000000029805,towards the end of my third round ,2,,26,51,3,4,2747.022599999994,375
